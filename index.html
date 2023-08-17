@@ -6,6 +6,8 @@
     <title>Portfolio</title>
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="">
+    
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -24,16 +26,16 @@
                     <h3 class="nav__name">Toi</h3>
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">Home</a>
+                            <a href="#home" class="nav__link active-link">Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link">About me</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#project" class="nav__link">Project</a>
+                            <a href="#projects" class="nav__link">Project</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact me</a>
+                            <a href="#contact" class="nav__link nav__link-button">Contact me</a>
                         </li>
                     </ul>
                     <!-- Close button -->
@@ -59,7 +61,7 @@
                     <h1 class="home__name">Toi Tran</h1>
                     <div class="home__perfil">
                         <div class="home__image">
-                            <img src="assets/img/home-perfil.jpg" alt="image" class="home__img">
+                            <img src="assets/img/1.jpg" alt="image" class="home__img">
                             <div class="home__shadow"></div>
                             <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
                             <img src="assets/img/random-lines.svg" alt="" class="home__line">
@@ -68,13 +70,13 @@
                             </div>
                         </div>
                         <div class="home__social">
-                            <a href="" class="home__social-link">
+                            <a href="https://www.facebook.com/50371te" class="home__social-link" target="_blank">
                                 <i class="ri-facebook-box-line"></i>
                             </a>
-                            <a href="" class="home__social-link">
+                            <a href="https://www.linkedin.com/in/toi-tran-045850265" class="home__social-link" target="_blank">
                                 <i class="ri-linkedin-box-line"></i> 
                             </a>
-                            <a href="" class="home__social-link">
+                            <a href="https://github.com/toitv50371" class="home__social-link" target="_blank">
                                 <i class="ri-github-line"></i>
                             </a> 
                         </div>
@@ -82,10 +84,13 @@
                     </div>
                     <div class="home__info">
                         <p class="home__description">
-                            <b>Frontend Developer</b>, with knowledge in web 
-                            development and design, I offer the best 
+                            <b>Web Developer</b>, with knowledge in web 
+                            development, I offer the best 
                             projects resulting in quality work.
                         </p>
+                        <a href="assets/pdf/TRANVANTOI_RESUME.pdf" class="home__cv button" target="_blank">
+                            DOWNLOAD CV
+                        </a>
                         <a href="#about" class="home__scroll">
                             <div class="home__scroll-box">
                                 <i class="ri-arrow-down-s-line"></i>
@@ -105,7 +110,7 @@
 
                     <div class="about__perfil">
                         <div class="about__image">
-                            <img src="assets/img/about-perfil.jpg" alt="" class="about__img">
+                            <img src="assets/img/2.jpg" alt="" class="about__img">
 
                             <div class="about__shadow"></div>
                             <div class="geometric-box"></div>
@@ -116,25 +121,27 @@
 
                     <div class="about__info">
                         <p class="about__description">
-                            Passionate about creating <b>Web Pages</b> with 
-                            <b>UI/UX User Interface</b>, I have years of 
-                            experience and many clients are happy with 
-                            the projects carried out.
+                            Passionate about creating <b>Web Pages</b>
                         </p>
                         <ul class="about__list">
                             <li class="about__item">
-                                <b>My Skills Are:</b> HTML, CSS, JavaScript, 
-                                React, Git & GitHub, Bootstrap, Flutter & 
-                                Figma.
+                                <b>Frontend:</b> HTML, CSS, JavaScript, Bootstrap, SCSS
+                            </li>
+                            <li class="about__item">
+                                <b>Backend:</b> Python(Django), NodeJS(Express), MySQL, MSSQL, MongoDB
+                            </li>
+                            <li class="about__item">
+                                <b>Orther:</b> Git, Postman, PTS
                             </li>
                         </ul>
 
                         <div class="about__buttons">
                             <a href="#contact" class="button">
-                                <i class="ri-send-plane-line">Contact me</i>
+                                <i class="ri-send-plane-line"></i>
+                                Contact me
                             </a>
 
-                            <a href="#" class="button__ghost" target="_blank">
+                            <a href="https://www.linkedin.com/in/toi-tran-045850265" class="button__ghost" target="_blank">
                                 <i class="ri-linkedin-box-line"></i>
                             </a>
                         </div>
@@ -157,11 +164,14 @@
                                 <div class="services__box"></div>
                                 <i class="ri-layout-4-line"></i>
                             </div>
-                            <h2 class="services__title">Web Design</h2>
+                            <h2 class="services__title">Frontend</h2>
 
-                            <p class="services__description">
-                                Beautiful and elegant designs with interfaces that are intuitive, efficient and pleasant to use for the user.
-                            </p>
+                            <div class="services__description">
+                                <i class="ri-html5-line"></i>
+                                <i class="ri-css3-line"></i>
+                                <i class="ri-javascript-line"></i>
+                                <i class="ri-bootstrap-line"></i>
+                            </div>
                         </div>
                     </article>
 
@@ -172,28 +182,15 @@
                                 <div class="services__box"></div>   
                                 <i class="ri-code-box-line"></i>
                             </div>
-                            <h2 class="services__title">Development</h2>
+                            <h2 class="services__title">Backend</h2>
                                 
-                            <p class="services__description">
-                                Custom web development tailored to your specifications, designed to provide a flawless user experience.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="services__card">
-                        <div class="services__border"></div>
-                        <div class="services__content">
-                            <div class="services__icon">
-                                <div class="services__box"></div>
-                                <i class="ri-smartphone-line"></i>
+                            <div class="services__description">
+                                <i class="fa-brands fa-python"></i>
+                                <i class="fa-brands fa-node-js"></i>
+                                <i class="ri-database-2-line"></i>
                             </div>
-                            <h2 class="services__title">Mobile App</h2>
-                            <p class="services__description">
-                                Custom web development tailored to your specifications, designed to provide a flawless user experience.
-                            </p>
                         </div>
                     </article>
-
                     
                 </div>
               
@@ -207,8 +204,8 @@
                 <div class="projects__container container grid">
                     <article class="projects__card">
                         <div class="projects__image">
-                            <img src="assets/img/project-1.jpg" alt="" class="project__img">
-                            <a href="#" class="projects__button button">
+                            <img src="assets/img/musicplayer.png" alt="" class="project__img">
+                            <a href="https://toitv50371.github.io/Music" class="projects__button button" target="_blank">
                                 <i class="ri-arrow-right-up-line"></i>
                             </a>
                             
@@ -216,17 +213,17 @@
 
                         <div class="projects__content">
                             <h3 class="projects__subtitle">Website</h3>
-                            <h2 class="projects__title">Restaurant Website</h2>
+                            <h2 class="projects__title">Music Player</h2>
                             <p class="projects__description">
-                                Projects that you carry out in the design and structure of the layout, showing the design at the client's request.
+                                Frontend: HTML, CSS, JavaScript
                             </p>
                         </div>
 
                         <div class="projects__buttons">
-                            <a href="#" target="_blank" class="projects__link">
+                            <a href="https://github.com/toitv50371/Music" target="_blank" class="projects__link">
                                 <i class="ri-github-line"></i> View
                             </a>
-                            <a href="#" target="_blank" class="projects__link">
+                            <a href="https://toitv50371.github.io/Music" target="_blank" class="projects__link">
                                 <i class="ri-dribbble-line"></i> View
                             </a>
                         </div>
@@ -236,7 +233,7 @@
                     <article class="projects__card">
                         <div class="projects__image">
                             <img src="assets/img/project-2.jpg" alt="" class="project__img">
-                            <a href="#" class="projects__button button">
+                            <a href="https://toitv50371.github.io/Todos" class="projects__button button" target="_blank">
                                 <i class="ri-arrow-right-up-line"></i>
                             </a>
                             
@@ -244,45 +241,17 @@
 
                         <div class="projects__content">
                             <h3 class="projects__subtitle">Website</h3>
-                            <h2 class="projects__title">Restaurant Website</h2>
+                            <h2 class="projects__title">Todos</h2>
                             <p class="projects__description">
-                                Projects that you carry out in the design and structure of the layout, showing the design at the client's request.
+                                Frontend: HTML, CSS, JavaScript
                             </p>
                         </div>
 
                         <div class="projects__buttons">
-                            <a href="#" target="_blank" class="projects__link">
+                            <a href="https://github.com/toitv50371/Todos" target="_blank" class="projects__link">
                                 <i class="ri-github-line"></i> View
                             </a>
-                            <a href="#" target="_blank" class="projects__link">
-                                <i class="ri-dribbble-line"></i> View
-                            </a>
-                        </div>
-                        
-                    </article>
-
-                    <article class="projects__card">
-                        <div class="projects__image">
-                            <img src="assets/img/project-3.jpg" alt="" class="project__img">
-                            <a href="#" class="projects__button button">
-                                <i class="ri-arrow-right-up-line"></i>
-                            </a>
-                            
-                        </div>
-
-                        <div class="projects__content">
-                            <h3 class="projects__subtitle">Website</h3>
-                            <h2 class="projects__title">Restaurant Website</h2>
-                            <p class="projects__description">
-                                Projects that you carry out in the design and structure of the layout, showing the design at the client's request.
-                            </p>
-                        </div>
-
-                        <div class="projects__buttons">
-                            <a href="#" target="_blank" class="projects__link">
-                                <i class="ri-github-line"></i> View
-                            </a>
-                            <a href="#" target="_blank" class="projects__link">
+                            <a href="https://toitv50371.github.io/Todos" target="_blank" class="projects__link">
                                 <i class="ri-dribbble-line"></i> View
                             </a>
                         </div>
@@ -292,7 +261,7 @@
                     <article class="projects__card">
                         <div class="projects__image">
                             <img src="assets/img/project-1.jpg" alt="" class="project__img">
-                            <a href="#" class="projects__button button">
+                            <a href="https://toitv50371.github.io/Shop" class="projects__button button" target="_blank">
                                 <i class="ri-arrow-right-up-line"></i>
                             </a>
                             
@@ -300,17 +269,17 @@
 
                         <div class="projects__content">
                             <h3 class="projects__subtitle">Website</h3>
-                            <h2 class="projects__title">Restaurant Website</h2>
+                            <h2 class="projects__title">Clone Website</h2>
                             <p class="projects__description">
-                                Projects that you carry out in the design and structure of the layout, showing the design at the client's request.
+                                Frontend: HTML, CSS, JavaScript
                             </p>
                         </div>
 
                         <div class="projects__buttons">
-                            <a href="#" target="_blank" class="projects__link">
+                            <a href="https://github.com/toitv50371/Shop" target="_blank" class="projects__link">
                                 <i class="ri-github-line"></i> View
                             </a>
-                            <a href="#" target="_blank" class="projects__link">
+                            <a href="https://toitv50371.github.io/Shop" target="_blank" class="projects__link">
                                 <i class="ri-dribbble-line"></i> View
                             </a>
                         </div>
@@ -319,8 +288,8 @@
 
                     <article class="projects__card">
                         <div class="projects__image">
-                            <img src="assets/img/project-2.jpg" alt="" class="project__img">
-                            <a href="#" class="projects__button button">
+                            <img src="assets/img/buildinghouse.jpg" alt="" class="project__img">
+                            <a href="https://toitv50371.github.io/BuildHouse" class="projects__button button" target="_blank">
                                 <i class="ri-arrow-right-up-line"></i>
                             </a>
                             
@@ -328,17 +297,78 @@
 
                         <div class="projects__content">
                             <h3 class="projects__subtitle">Website</h3>
-                            <h2 class="projects__title">Restaurant Website</h2>
+                            <h2 class="projects__title">Buiding House</h2>
                             <p class="projects__description">
-                                Projects that you carry out in the design and structure of the layout, showing the design at the client's request.
+                                Frontend: HTML, CSS, JavaScript, Bootstrap
                             </p>
                         </div>
 
                         <div class="projects__buttons">
-                            <a href="#" target="_blank" class="projects__link">
+                            <a href="https://github.com/toitv50371/BuildHouse" target="_blank" class="projects__link">
                                 <i class="ri-github-line"></i> View
                             </a>
-                            <a href="#" target="_blank" class="projects__link">
+                            <a href="https://toitv50371.github.io/BuildHouse" target="_blank" class="projects__link">
+                                <i class="ri-dribbble-line"></i> View
+                            </a>
+                        </div>
+                        
+                    </article>
+
+                    <article class="projects__card">
+                        <div class="projects__image">
+                            <img src="assets/img/todolist.jpg" alt="" class="project__img">
+                            <a href="https://github.com/toitv50371/Todo_List" class="projects__button button" target="_blank">
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                            
+                        </div>
+
+                        <div class="projects__content">
+                            <h3 class="projects__subtitle">Website</h3>
+                            <h2 class="projects__title">To do List</h2>
+                            <p class="projects__description">
+                                Frontend: HTML, CSS
+                            </p>
+                            <p class="projects__description">
+                                Backend: Python(Django)
+                            </p>
+                        </div>
+
+                        <div class="projects__buttons">
+                            <a href="https://github.com/toitv50371/Todo_List" target="_blank" class="projects__link">
+                                <i class="ri-github-line"></i> View
+                            </a>
+                            <a href="https://github.com/toitv50371/Todo_List" target="_blank" class="projects__link">
+                                <i class="ri-dribbble-line"></i> View
+                            </a>
+                        </div>
+                        
+                    </article>
+                    <article class="projects__card">
+                        <div class="projects__image">
+                            <img src="assets/img/photoAlbum.jpg" alt="" class="project__img">
+                            <a href="https://github.com/toitv50371/PhotoAlbum" class="projects__button button" target="_blank">
+                                <i class="ri-arrow-right-up-line"></i>
+                            </a>
+                            
+                        </div>
+
+                        <div class="projects__content">
+                            <h3 class="projects__subtitle">Website</h3>
+                            <h2 class="projects__title">Photo Album</h2>
+                            <p class="projects__description">
+                                Frontend: HTML, CSS
+                            </p>
+                            <p class="projects__description">
+                                Backend: Python(Django)
+                            </p>
+                        </div>
+
+                        <div class="projects__buttons">
+                            <a href="https://github.com/toitv50371/PhotoAlbum" target="_blank" class="projects__link">
+                                <i class="ri-github-line"></i> View
+                            </a>
+                            <a href="https://github.com/toitv50371/PhotoAlbum" target="_blank" class="projects__link">
                                 <i class="ri-dribbble-line"></i> View
                             </a>
                         </div>
@@ -376,10 +406,10 @@
                             Send Me A Message 
                         </h2>
                         <form action="" class="contact__form" id="contact-form">
-                            <div class="contact_group">
+                            <div class="contact__group">
                                 <div class="contact__box">
-                                    <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
-                                    <label for="name" class="contact__label">First Name</label>
+                                    <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Full Name">
+                                    <label for="name" class="contact__label">Full Name</label>
                                 </div>
 
                                 <div class="contact__box">
@@ -419,13 +449,13 @@
                             </div>
 
                             <div class="contact__social-links">
-                                <a href="#" target="_blank" class="contact__social-link">
+                                <a href="https://www.facebook.com/50371te" target="_blank" class="contact__social-link">
                                     <i class="ri-facebook-circle-line"></i>
                                 </a>
-                                <a href="#" target="_blank" class="contact__social-link">
-                                    <i class="ri-instagram-line"></i>
+                                <a href="https://github.com/toitv50371" target="_blank" class="contact__social-link">
+                                    <i class="ri-github-line"></i>
                                 </a>
-                                <a href="#" target="_blank" class="contact__social-link">
+                                <a href="https://www.linkedin.com/in/toi-tran-045850265" target="_blank" class="contact__social-link">
                                     <i class="ri-linkedin-box-line"></i>
                                 </a>
                             </div>
@@ -460,12 +490,12 @@
   
         <!--========== SCROLL UP ==========-->
         <a href="" class="scrollup" id="scroll-up">
-            
+            <i class="ri-arrow-up-s-line"></i>
         </a>
         
   
         <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+        <script src="assets/js/scrollreveal.min.js"></script>
         
         <!--=============== EMAIL JS ===============-->
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
